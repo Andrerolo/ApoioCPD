@@ -1,5 +1,5 @@
 import socket
-
+import functions
  
 
  
@@ -52,7 +52,8 @@ class JSONRPCServer:
 
             # Send response
 
-            res = msg
+            #res = msg
+            res = functions.hello()
 
             conn.send(res.encode())
 
